@@ -4,9 +4,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON requests
 app.use(express.json());
-app.use(cors({
-  origin: 'http://localhost:3001' // Change this to your frontend's origin
-}));
+app.use(cors());
 
 // User information - Hardcoded
 const user_id = "john_doe_17091999";
